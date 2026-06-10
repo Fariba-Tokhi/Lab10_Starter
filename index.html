@@ -13,7 +13,28 @@
 
   <!-- Main Stylesheet & Scripts -->
   <link rel="stylesheet" href="assets/styles/global.css" />
+ 
   <script src="assets/scripts/partyHorn.js" type="module"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YPYGX1BGPM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YPYGX1BGPM');
+</script>
+
+<script>
+  const randomNumber = Math.random();
+  const shouldApplyClass = randomNumber < 0.5;
+
+  let body = document.querySelector('body');
+
+  if (shouldApplyClass) {
+    body.classList.add('blue');
+  }
+</script>
 </head>
 
 <body>
